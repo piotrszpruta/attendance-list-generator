@@ -1,15 +1,15 @@
 ﻿<hc:Window x:Class="Attendance_List_Generator.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
            xmlns:hc="https://handyorg.github.io/handycontrol"
            xmlns:controls="clr-namespace:Attendance_List_Generator.Controls"
-        mc:Ignorable="d"
+           mc:Ignorable="d"
            Title="Attendance List Generator"
            Height="450"
            Width="800">
-
+    
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_Plik">
@@ -31,5 +31,15 @@
                 <MenuItem Header="_O aplikacji" />
             </MenuItem>
         </Menu>
+        <hc:TabControl
+                       DockPanel.Dock="Bottom"
+                       Style="{StaticResource TabControlInLine}">
+            <hc:TabItem Padding="10" Header="Strona główna">
+                <controls:MainPageControl />
+            </hc:TabItem>
+            <hc:TabItem Padding="10" Header="Pracownicy">
+                <controls:UsersControl />
+            </hc:TabItem>
+        </hc:TabControl>
     </DockPanel>
 </hc:Window>
