@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Attendance_List_Generator.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Attendance_List_Generator
         public MainWindow()
         {
             InitializeComponent();
+            Startup.StartupManager();
         }
     }
 }
