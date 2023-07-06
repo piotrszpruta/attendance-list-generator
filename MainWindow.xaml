@@ -10,6 +10,26 @@
            Height="450"
            Width="800">
 
-    </Grid>
-</Window>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Plik">
+                <MenuItem Header="_Generuj nowe listy" />
+                <MenuItem Header="_Importuj listę pracowników" />
+                <MenuItem Header="_Eksportuj listę pracowników" />
+                <Separator />
+                <MenuItem Header="_Zablokuj dostęp" />
+                <MenuItem Header="_Zamknij" />
+            </MenuItem>
+            <MenuItem Header="_Narzędzia">
+                <MenuItem Header="_Importuj bazę danych" />
+                <MenuItem Header="_Usuń bazę danych (UWAGA)"
+                          Foreground="White"
+                          Background="#bf3000" />
+            </MenuItem>
+            <MenuItem Header="_Pomoc">
+                <MenuItem Header="_Sprawdź aktualizacje" />
+                <MenuItem Header="_O aplikacji" />
+            </MenuItem>
+        </Menu>
+    </DockPanel>
 </hc:Window>
